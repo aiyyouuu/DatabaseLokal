@@ -5,13 +5,13 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "sekolah_db")
+@Entity(tableName = "sekolah_db") //untuk nama tabelnya
 
 public class DataSekolah {
     @NonNull
-    @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "id")
-    private int id;
+    @PrimaryKey(autoGenerate = true) //menandakan primary key yaitu id
+    @ColumnInfo(name = "id") //info buat atribut dalam database
+    private int id; // tipe data dari masing masin gatributnya
 
     @ColumnInfo(name = "jml_siswa")
     private String jml_siswa;
@@ -25,14 +25,12 @@ public class DataSekolah {
     @ColumnInfo(name = "alamat")
     private String alamat;
 
-
+    //selanjutnya di alt enter untuk setter dan getternya
     public int getId() {
         return id;
     }
 
-    public void setId(@NonNull int id) {
-        this.id = id;
-    }
+    public void setId(@NonNull int id) { this.id = id; }
 
     public String getJml_siswa() {
         return jml_siswa;

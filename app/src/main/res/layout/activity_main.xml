@@ -13,16 +13,28 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INPUT DATA SEKOLAH"
+            android:id="@+id/jdl1"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="80dp"
+            ></TextView>
+
+        <TextView
+            android:layout_marginTop="20dp"
             android:id="@+id/tv_nama_sekolah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="bottom"
             android:text="Nama Sekolah : "
             android:textSize="20sp"
             android:textColor="@android:color/white"
             android:textStyle="bold"
-            android:padding="5dp"/>
+            android:padding="5dp"
+            android:layout_below="@id/jdl1" />
         <TextView
             android:id="@+id/tv_alamat"
             android:layout_width="wrap_content"
@@ -65,8 +77,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_nama_sekolah"
             android:textSize="18sp"
+            android:hint="masukkan nama sekolah"
+            android:textColorHint="@color/white"
             android:textColor="@android:color/white"
-            android:padding="5dp"/>
+            android:padding="10dp"/>
         <EditText
             android:id="@+id/et_alamat_sekolah"
             android:layout_width="match_parent"
@@ -74,7 +88,9 @@
             android:layout_below="@id/tv_alamat"
             android:textSize="18sp"
             android:textColor="@android:color/white"
-            android:padding="5dp"/>
+            android:hint="masukkan alamat sekolah"
+            android:textColorHint="@color/white"
+            android:padding="10dp"/>
 
         <EditText
             android:id="@+id/et_jml_siswa"
@@ -83,7 +99,9 @@
             android:layout_below="@id/tv_jml_siswa"
             android:textSize="18sp"
             android:textColor="@android:color/white"
-            android:padding="5dp"/>
+            android:hint="masukkan jumlah siswa"
+            android:textColorHint="@color/white"
+            android:padding="10dp"/>
 
         <EditText
             android:id="@+id/et_jml_guru"
@@ -92,7 +110,9 @@
             android:layout_below="@id/tv_jml_guru"
             android:textSize="18sp"
             android:textColor="@android:color/white"
-            android:padding="5dp"/>
+            android:hint="masukkan jumlah guru"
+            android:textColorHint="@color/white"
+            android:padding="10dp"/>
         <Button
             android:id="@+id/btn_submit"
             android:layout_width="wrap_content"
@@ -101,7 +121,7 @@
             android:layout_below="@id/et_jml_guru"
             android:background="#8B0000"
             android:textColor="@android:color/white"
-            android:layout_marginLeft="80dp"
+            android:layout_marginLeft="100dp"
             android:layout_marginTop="20dp"/>
         <Button
             android:id="@+id/btn_lihat"

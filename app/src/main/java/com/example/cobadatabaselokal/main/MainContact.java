@@ -7,6 +7,7 @@ import com.example.cobadatabaselokal.entity.DataSekolah;
 
 import java.util.List;
 
+//untuk mengaktifkan fungsi edit dan delete
 public interface MainContact {
     interface view extends View.OnClickListener{
         void resetForm();

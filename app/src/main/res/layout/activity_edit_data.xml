@@ -6,11 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".Edit_data"
     android:background="@android:color/black">
+
     <TextView
-        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REVISI DATA SEKOLAH"
+        android:id="@+id/jdl2"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="80dp"
+        ></TextView>
+
+    <TextView
+        android:layout_marginTop="20dp"
         android:id="@+id/tv_nama_sekolah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/jdl2"
         android:gravity="bottom"
         android:text="Nama Sekolah : "
         android:textSize="20sp"
@@ -60,7 +74,9 @@
         android:layout_below="@id/tv_nama_sekolah"
         android:textSize="18sp"
         android:textColor="@android:color/white"
-        android:padding="5dp"/>
+        android:hint="masukkan nama sekolah"
+        android:textColorHint="@color/white"
+        android:padding="10dp"/>
     <EditText
         android:id="@+id/et_alamat_sekolah"
         android:layout_width="match_parent"
@@ -68,7 +84,9 @@
         android:layout_below="@id/tv_alamat"
         android:textSize="18sp"
         android:textColor="@android:color/white"
-        android:padding="5dp"/>
+        android:hint="masukkan alamat sekolah"
+        android:textColorHint="@color/white"
+        android:padding="10dp"/>
 
     <EditText
         android:id="@+id/et_jml_siswa"
@@ -77,7 +95,9 @@
         android:layout_below="@id/tv_jml_siswa"
         android:textSize="18sp"
         android:textColor="@android:color/white"
-        android:padding="5dp"/>
+        android:hint="masukkan jumlah siswa"
+        android:textColorHint="@color/white"
+        android:padding="10dp"/>
 
     <EditText
         android:id="@+id/et_jml_guru"
@@ -86,7 +106,9 @@
         android:layout_below="@id/tv_jml_guru"
         android:textSize="18sp"
         android:textColor="@android:color/white"
-        android:padding="5dp"/>
+        android:hint="masukkan jumlah guru"
+        android:textColorHint="@color/white"
+        android:padding="10dp"/>
     <Button
         android:id="@+id/btn_submit"
         android:layout_width="match_parent"
